@@ -1,0 +1,34 @@
+There are two online supermarkets which provide price of various products.
+
+You need to write a program to acquire, extract and compare the price from these two suppliers, for a given product.
+
+Example: Price of a coconut from the two different suppliers can be found in the following webpages.
+
+laughs_coconut = 'https://scrape-sm1.github.io/site1/COCONUT%20market1super.html'
+glomark_coconut = 'https://glomark.lk/coconut/p/11624'
+
+The function  def compare_prices(product_laughs,product_glomark) will take-in two similar products from two suppliers, and compare the prices to recommend you which option is cheaper on a given instance of time.
+
+1. Visit the links in your web browser, and use the Inspect elements / View page source tools of the browser to understand the structure of the web pages given above.
+2. Complete the compare_prices function which is pre-loaded in the answer box to acquire and extract the price values from two web pages.
+
+When you submit your answer to be checked, be patient for a while (up to 20 seconds) until its been checked with multiple test cases.
+
+If you have any issues with checking your code, you can use the following trinket. (Note there are two python files in this trinket, and you have to only edit the compare_prices.py file. Once you get the correct answer, you can copy and paste entire content of the compare_prices.py file to the answer box)
+https://trinket.io/embed/python3/d6d93857b9
+
+Example expected output
+
+Laughs   COCONUT - Item#mr-2058 Rs.:  89.0
+Glomark  Coconut Rs.:  86.0
+Glomark is cheaper: 3.0
+
+Here are some more test cases for you to test in your own computer or in trinket.
+
+laughs_tissues = 'https://scrape-sm1.github.io/site1/FLORA%20FACIAL%20TISSUES%202%20X%20160%20BOX%20-%20HOUSEHOLD%20-%20Categories%20market1super.com.html'
+glomark_tissues = 'https://glomark.lk/flora-facial-tissues-160s/p/10470'
+compare_prices(laughs_tissues,glomark_tissues)
+
+laughs_bread = 'https://scrape-sm1.github.io/site1/Crimson%20Bread%20Sliced%20market1super.com.html'
+glomark_bread = 'https://glomark.lk/sandwich-bread-450g/p/13606'
+compare_prices(laughs_bread,glomark_bread)
